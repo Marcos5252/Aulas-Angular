@@ -2,10 +2,14 @@
 
     <h2 class="text-2x1 font-semibold text-gray-700 mb-4">Nova Categoria</h2>
     
-    <form id="categoriaForm" action="">
+    <form id="categoriaForm" action="" [formGroup]="camposForm" (ngSubmit)="salvar()">
         <div class="mb-4 ">
             <label class="block text-gray-600 font-medium mb-2" for="">Nome</label>
-            <input class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring-blue-400" type="text" id="nome" name="nome" placeholder="Ex: Restaurantes, praias, shoppings" required /> 
+            <input class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring-blue-400" type="text" 
+            id="nome"
+            name="nome"
+            formControlName="nome"
+            placeholder="Ex: Restaurantes, praias, shoppings" required /> 
             
             <span class="text-red-500 text-sm">
                 Campo obrigatório!
@@ -16,7 +20,10 @@
         <!-----CAMPO DESCRIÇÃO-->
         <div class="mb-4">
             <label class="block text-gray-600 font-medium mb-2" for=""></label>
-            <textarea rows-4 class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring-blue-400 focus:outline-none" type="text" id="descricao" name="descricao"  required > </textarea>
+            <textarea rows-4 class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring-blue-400 focus:outline-none" type="text"
+             id="descricao"
+             name="descricao"
+            formControlName="descricao" required > </textarea>
             
             <span class="text-red-500 text-sm">
                 Campo obrigatório!

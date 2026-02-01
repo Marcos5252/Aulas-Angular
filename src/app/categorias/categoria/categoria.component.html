@@ -11,7 +11,7 @@
             formControlName="nome"
             placeholder="Ex: Restaurantes, praias, shoppings" required /> 
             
-            <span class="text-red-500 text-sm">
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('nome')">
                 Campo obrigatório!
             </span>
         </div>
@@ -25,7 +25,7 @@
              name="descricao"
             formControlName="descricao" required > </textarea>
             
-            <span class="text-red-500 text-sm">
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('descricao')">
                 Campo obrigatório!
             </span>
         </div>

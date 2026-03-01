@@ -9,6 +9,16 @@
       "id": "2",
       "nome": "Shoppings",
       "descricao": "Lugares para compras e passeios"
+    },
+    {
+      "id": "3bec",
+      "nome": "Praias",
+      "descricao": "Lugares para tomar banho com a família"
+    },
+    {
+      "id": "dde2",
+      "nome": "Teste",
+      "descricao": "Teste"
     }
   ]
 }
